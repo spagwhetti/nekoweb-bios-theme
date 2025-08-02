@@ -1,0 +1,327 @@
+/* ==UserStyle==
+@name       Nekoweb BIOS Theme
+@version    20250801.15.46
+@namespace  ?
+@license    CC Zero
+==/UserStyle== */
+
+@-moz-document regexp("https:\/\/nekoweb\.org\/(?!nekode|minidashboard|dashboard\/editor).*") {
+@font-face {
+    font-family: 'bios-font';
+    src: url('https://spaghetti.nekoweb.org/fonts/bios.ttf');
+}
+
+:root {
+    --grey: #ccd1de;
+    --dark-grey: #5c5c5e;
+    --black: #161718;
+    --blue: #0302b7;
+}
+
+html {
+    background: var(--black);
+}
+
+body {
+    font-family: bios-font;
+    font-size: 18px;
+    filter: grayscale(0.1) sepia(0.2);
+}
+
+.sitefeature {
+    background-image: url("/assets/previewplaceholder.png");
+    background-color: var(--grey);
+    border: 2px solid var(--blue);
+}
+
+.post-box {
+    background-color: var(--grey);
+    border: 2px solid var(--blue);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--dark-grey);
+    font-weight: normal;
+}
+
+.site-box {
+    background: var(--grey);
+    border: 2px solid var(--blue);
+    color: var(--dark-grey);
+    font-size: 18px;
+}
+
+.containergrid {
+    background: var(--grey);
+    max-width: 850px;
+    margin: 16px auto;
+    outline: none;
+}
+
+.alert {
+    background: var(--blue);
+    color: var(--grey);
+}
+
+.header {
+    background: var(--blue);
+    border-bottom: none;
+}
+
+.banner img {
+    outline: none;
+}
+
+#bannerauthor {
+    font-size: 12px;
+    background: var(--grey);
+    border-radius: 0;
+}
+
+#loginform {
+    color: var(--grey);
+}
+
+#userdisplay {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+#usersc {
+    border: none;
+    border-radius: 0;
+}
+
+.login a {
+    color: var(--grey);
+}
+
+.navigation {
+    background: var(--blue);
+    filter: none;
+}
+
+.navigation::after {
+    display: none;
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation li a {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    padding-top: 0;
+    background: var(--blue);
+    text-align: center;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    color: var(--grey);
+    border: none;
+    outline: none;
+}
+
+.navigation li a:hover {
+    background: var(--grey);
+    color: var(--blue);
+    box-shadow: none;
+}
+
+.navigation li a:active {
+    background: var(--grey);
+    box-shadow: none;
+}
+
+.mainbody {
+    color: var(--dark-grey);
+    margin: 8px;
+    padding: 8px 16px 8px 16px;
+    border: 2px solid var(--blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: bios-font;
+    color: var(--black);
+    font-style: normal;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--blue);
+    font-weight: normal;
+}
+
+a:hover {
+    color: var(--grey);
+    background: var(--blue);
+    text-decoration: none;
+}
+
+button:not(#stats a button,
+.thingamabob button, .control-btn,
+.ace_search button),
+input[type="submit"],
+select {
+    border-radius: 0;
+    color: var(--grey);
+    border: none;
+    padding: 2px 10px;
+    background: var(--blue);
+    box-shadow: none;
+    text-shadow: none;
+    margin: 2px;
+}
+
+button:not(#stats a button,
+.thingamabob button,
+.ace_search button):active,
+input[type="submit"]:active,
+select:active {
+    background: var(--blue);
+    box-shadow: none;
+}
+
+#stats a button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.footer {
+    border-top: none;
+    font-size: 18px;
+    color: var(--grey);
+    background: var(--blue);
+}
+
+.footer a {
+    color: var(--grey)
+}
+
+.contacts {
+    box-shadow: none;
+    background: var(--grey);
+    border: 2px solid var(--blue);
+    border-radius: 0;
+    transform: none;
+}
+
+.spirals {
+    display: none;
+}
+
+.sitecarousel {
+    background: var(--grey);
+    margin: 0;
+}
+
+.pre-site a:hover {
+    background: none;
+}
+
+.carouselContainer p {
+    color: var(--dark-grey);
+}
+
+#selfarrow,
+.arrow {
+    top: -3em;
+}
+
+#selfmessage,
+.message {
+    top: -2em;
+}
+
+.news {
+    background: var(--grey);
+    border: none;
+}
+
+#registerForm {
+    border-image: none;
+    border: 2px solid var(--blue);
+}
+
+html, body {
+    scrollbar-gutter: stable;
+}
+
+#dashboard a {
+    color: var(--blue);
+}
+
+#dashboard a:hover {
+    background: none;
+}
+
+#control-bar-div {
+    border: none;
+}
+
+#toggle-button.tile:after {
+    content:url(/assets/tileview.png?1);  
+}
+
+#toggle-button:after {
+    content:url(/assets/listview.png?1);
+}
+
+#filepath {
+    border: 2px solid var(--blue);
+    background: var(--grey);
+    border-radius: 0;
+    height: 32px;
+}
+
+.files {
+    margin: 16px 16px 16px 40px;
+    background: var(--grey);
+    border-radius: 0;
+    border: 2px solid var(--blue);
+    padding: 0;
+}
+
+.thingamabob.list:nth-child(2n) {
+    background-color: var(--grey);
+}
+
+.thingamabob:hover {
+    background-color: var(--grey) !important;
+}
+
+.thingamabob:hover .thingamabob-name {
+    color: var(--blue) !important;
+}
+
+#sort-menu {
+    background-color: var(--grey);
+    border: 2px solid var(--blue);
+}
+
+#stats {
+    border-bottom: 2px dotted var(--blue);
+}
+}
